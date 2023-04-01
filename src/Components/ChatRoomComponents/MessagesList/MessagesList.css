@@ -1,0 +1,12 @@
+.current-user {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.current-user span {
+    margin-right: 8px;
+    margin-left: 0;
+}
+.current-user img {
+    margin-left: 8px;
+}

@@ -1,0 +1,64 @@
+$color-background: #24293e;
+$color-background-light: #f4f5fc;
+$color-text-light: #f4f5fc;
+$color-text-dark: #CCCCCC;
+$color-primary-light: #8ebbff;
+
+
+.roomContainer {
+    background-color: $color-background;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .roomWrapper {
+        background-color: white;
+        width: 70%;
+        height: 55%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+
+        .roomHeader {
+            color: $color-background;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .roomSubHeader {
+            color: $color-background;
+            font-size: 12px;
+        }
+
+        .roomFormContainer {
+            display: flex;
+            flex-direction: row;
+            border: 3px solid $color-primary-light;
+            border-radius: 10px;
+            overflow: hidden;
+
+            input {
+                padding: 15px;
+                border: hidden;
+                width: 250px;
+
+                &::placeholder {
+                    color: rgb(175, 175, 175);
+                }
+            }
+
+            button {
+                background-color: $color-primary-light;
+                color: $color-text-light;
+                padding: 10px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+$color-background: #24293e;
+$color-background-light: #f4f5fc;
+$color-text-light: #f4f5fc;
+$color-text-dark: #819331;
+$color-primary-light: #8ebbff;
+
+
+.chatRoomContainer {
+    background-color: $color-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .chatRoomWrapper {
+        width: 80%;
+        border-radius: 15px;
+        display: flex;
+        height: 80vh;
+
+        .scrollbar-hidden::-webkit-scrollbar {
+            display: none;
+        }
+
+        .fav_rooms {
+            background-color: $color-primary-light;
+            width: 30%;
+            border-bottom-left-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+
+        .chat_room_container {
+            width: 70%;
+            background-color: #f4f5fc;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+
+
+            .chat_room_header {
+                border-top-right-radius: 15px;
+                background-color: red;
+                height: 10%;
+            }
+
+            .messages_list_container {
+                
+                overflow: scroll;
+                // overflow: auto;
+                // overflow-x: hidden;
+                // overflow-y: hidden;
+                height:80%;
+                background-color: lightcoral;
+            }
+
+            .message_input_container {
+                height: 10%;
+                background-color: green;
+                border-bottom-right-radius: 15px;
+                display: flex;
+
+                input {
+                    width: 80%; 
+                }
+
+                button {
+                    width: 20%;
+                }
+            }
+        }
+    }
+
+}
+
+
+// .chatRoomContainer {
+//     background-color: $color-background;
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     .chatRoomWrapper {
+//         background-color: white;
+//         width: 85vw;
+//         height: 70vh;
+//         border-radius: 10px;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//         overflow: scroll;
+//     }
+//         .chatRoomHeader {
+            
+//             background-color: $color-primary-light;
+//             color: $color-text-light;
+//             font-weight: bold;
+//             font-size: 30px;
+            
+//         }
+        
+// }
