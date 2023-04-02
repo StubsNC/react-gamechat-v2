@@ -1,0 +1,29 @@
+$color-background: #24293e;
+$color-background-light: #f4f5fc;
+$color-text-light: #f4f5fc;
+$color-text-dark: #819331;
+$color-primary-light: #8ebbff;
+
+.Generate_Container {
+    background-color: $color-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    .Generate_Wrapper {
+        width: 80%;
+        border-radius: 15px;
+        display: flex;
+        height: 80vh;
+        background-color: #8ebbff;
+
+        .Generate_Form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
